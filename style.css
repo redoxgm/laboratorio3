@@ -1,3 +1,44 @@
-h1{
-    color: brown;
+.paginaPrincipal{
+    display: grid;
+    text-align: center;
+    margin: 0%;
+    grid-template-columns: 20% auto ;
+    grid-template-rows: auto auto ;  
+        
+}
+
+
+
+
+.imagenesLateral{
+    background-color: black;
+    grid-column: 1/2
+    
+}
+
+.imagenProducto{
+ background-color: red;
+ grid-column: 2;
+ grid-row: 1 ;
+}
+
+#imagen1{
+    width: 50vmin;
+}
+
+.descripcion{
+    background-color: blue;
+    grid-column: 1/ span 2;
+    grid-row: 3;
+    text-align: left;
+    
+}
+
+.comentarios{
+    background-color: white;
+    grid-column: 1/ span 2;
+    grid-row: 4;
+    text-align: left;
+    
+    
 }
