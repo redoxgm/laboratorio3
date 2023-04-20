@@ -4,7 +4,8 @@
     <head>
         <title>Mercado Trucho</title>
         <meta charset="URF-8">
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+        <script src="javascrip.js"></script>
         
     </head>
 
@@ -61,14 +62,16 @@
 
                 <h4>Info Ususario</h4>
 
-                <p>Nombre<input type="text" yle="width  : 100px; height: 20px" placeholder="nombre"></p>
-                <p>Apellido<input type="text" yle="width  : 100px; height: 20px" placeholder="nombre"></p>
-                <p>Email<input type="text" yle="width  : 100px; height: 20px" placeholder="nombre"></p>
-                <label for=""><input type="text" style="width  : 200px; height: 100px" placeholder="Ingrese su comentario"></label>
+                <label for=""> Nombre: <input type="text" yle="width  : 100px; height: 20px" placeholder="nombre" id="txtNombre"></label>
+                <br>
+                <br>
+                <label for=""> Email: <input type="text" yle="width  : 100px; height: 20px" placeholder="nombre" id="txtEmail"></label>
+                <br>
+                <br>
+                <label for=""><input type="text" style="width  : 200px; height: 100px" placeholder="Ingrese su comentario" id="txtResena"></label>
                
                 <br>
                 
-                <input type="button" value="Enviar">
 
            
                 <h4>Opiniones</h4>
@@ -83,10 +86,15 @@
 
                </label>
 
+               <br>
                
-                <input type="button" value="Enviar"  >
+               <label><input type="button" value="Publicar" id="btnPublicar"  ></lAbel> 
                 
             </form>
+
+            <div id="resenas">
+
+            </div>
 
            </div>
     </body>

@@ -34,27 +34,66 @@ function btnCalcular(){
            
             resultado = (numeroConvertir * 9.5) + 32 ;
             console.log(resultado)
+            let txtResultado = document.createTextNode("resultado de la conversion: " + resultado);
+            let parrafo = document.createElement('p');
+            parrafo.appendChild(txtResultado);
+            document.getElementById("txtResultado").appendChild(parrafo);
         }
 
         if(unidadSeleccionada === "fahrenheit"){
             resultado = (numeroConvertir - 32) * 9.5
             console.log(resultado)
+            let txtResultado = document.createTextNode("resultado de la conversion: " + resultado);
+            let parrafo = document.createElement('p');
+            parrafo.appendChild(txtResultado);
+            document.getElementById("txtResultado").appendChild(parrafo);
+
         }
 
     } else if(unidadSeleccionada === "kilómetros" && opcionConvertir === "millas" || unidadSeleccionada === "millas" && opcionConvertir === "kilómetros" ){
        
         if(unidadSeleccionada === "kilómetros" ){
             resultado= numeroConvertir * 0.62137;
-        console.log(resultado);
+            console.log(resultado);
+            let txtResultado = document.createTextNode("resultado de la conversion: " + resultado);
+            let parrafo = document.createElement('p');
+            parrafo.appendChild(txtResultado);
+            document.getElementById("txtResultado").appendChild(parrafo);
         }
 
         if(unidadSeleccionada === "millas"){
             resultado= numeroConvertir * 1.609;
             console.log(resultado);
+            let txtResultado = document.createTextNode("resultado de la conversion: " + resultado);
+            let parrafo = document.createElement('p');
+            parrafo.appendChild(txtResultado);
+            document.getElementById("txtResultado").appendChild(parrafo);
         }
         
+ 
+    }else if (unidadSeleccionada === "libras" && opcionConvertir === "kilogramos" || unidadSeleccionada === "kilogramos" && opcionConvertir === "libras"){
+
+        if(unidadSeleccionada === "libras" ){
+            resultado= numeroConvertir/2.2046;
+            console.log(resultado);
+            let txtResultado = document.createTextNode("resultado de la conversion: " + resultado);
+            let parrafo = document.createElement('p');
+            parrafo.appendChild(txtResultado);
+            document.getElementById("txtResultado").appendChild(parrafo);
+        }
+
+        if(unidadSeleccionada === "kilogramos"){
+            resultado = numeroConvertir * 2.205
+            console.log(resultado);
+            let txtResultado = document.createTextNode("resultado de la conversion: " + resultado);
+            let parrafo = document.createElement('p');
+            parrafo.appendChild(txtResultado);
+            document.getElementById("txtResultado").appendChild(parrafo);
+        }
 
     }
+
+    
         
 }
 
