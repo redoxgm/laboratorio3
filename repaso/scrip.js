@@ -88,7 +88,7 @@ function btnCalcular(){
             let txtResultado = document.createTextNode("resultado de la conversion: " + resultado);
             let parrafo = document.createElement('p');
             parrafo.appendChild(txtResultado);
-            document.getElementById("txtResultado").appendChild(parrafo);
+            document.getElementById("txtResultado").appendChild(parrafo); 
         }
 
     }
