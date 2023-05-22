@@ -41,6 +41,7 @@ fetch('https://my-json-server.typicode.com/agustinruatta/fake_json_server_db/pro
     let img = document.createElement('img');
     img.src = imagen
     document.getElementById("imagen-producto").appendChild(img)
+   
 
     let descripcion = objeto.description;
     console.log(descripcion)

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MercadoNoLibre</title>
+    <link href="index.css" rel="stylesheet">
+    <script src="index.js" defer></script>
+    <script src="https://unpkg.com/vue@3.3.2/dist/vue.global.js"></script>
+</head>
+<body>
+<div id="app">
+    <div id="buscador">
+        <label>Buscar:</label>
+        <input type="text">
+        <button>Buscar</button>
+    </div>
+
+    <p>Cantidad de artículos: <strong id="cantidad-articulos"></strong></p>
+
+    <div id="listado-productos">
+        <div class="preview-producto">
+            <a href="producto.html">
+                <img :src="products[0].image_url">
+                <strong>{{ products[0].title }}</strong>
+            </a>
+        </div>
+        <div class="preview-producto">
+            <a href="producto.html">
+                <img :src="products[1].image_url">
+                <strong>{{ products[1].title }}</strong>
+            </a>
+        </div>
+        <div class="preview-producto">
+            <a href="producto.html">
+                <img :src="products[2].image_url">
+                <strong>{{ products[2].title }}</strong>
+            </a>
+        </div>
+        <div class="preview-producto">
+            <a href="producto.html">
+                <img :src="products[3].image_url">
+                <strong>{{ products[3].title }}</strong>
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
