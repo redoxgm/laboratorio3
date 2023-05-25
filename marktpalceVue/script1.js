@@ -30,14 +30,34 @@ const app = Vue.createApp({
         },
 
         
-        precio(indice){
+        ram(indice){
 
             return this.notebooksTypes[indice].ramAmount
             
-        }
+        },
+
+        PrecioSeleccionado(indice){
+
+            this.selectRam = indice
+           
+        },
+
+      
 
 
     },
+    computed:{
+
+        mostrarPrecioSeleccionado(){
+
+            return  this.notebooksTypes[this.selectRam].price
+
+        }
+
+
+    }
+
+    
 
    
     
