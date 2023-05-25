@@ -22,14 +22,13 @@
         <h2>Características</h2>
         <h3>Tipo computadora:</h3>
         <ul>
-            <li>Precio: {{ notebooksTypes[0].price }}</li>
-            <li>RAM: {{ notebooksTypes[0].ramAmount }} GB</li>
+            <li v-for="(notebook ,indice) in notebooksTypes" :key="notebook.id"  @mouseover(indice) > {{precio(indice)}}</li>
+           
         </ul>
-        <h3>Tipo computadora:</h3>
-        <ul>
-            <li>Precio: {{ notebooksTypes[1].price }}</li>
-            <li>RAM: {{ notebooksTypes[1].ramAmount }} GB</li>
-        </ul>
+        <p >Precio Producto:</p>
+
+        <button class="agregarCompra" @click="agregar">Comprar</button>
+        <p>carrito: {{carro}}</p>
     </div>
 
     <a :href="factory_url" id="link-fabricante" target="_blank"
