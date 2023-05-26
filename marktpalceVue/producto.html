@@ -13,7 +13,8 @@
         <h1 id="titulo-producto">{{ title }}</h1>
     </div>
     <div id="imagen-producto">
-        <img :src="image_url" id="imagen">
+        <img v-for="imagen in  imagenesNotebook" class="imagen-miniatura" :src="imagen" @mouseover="cambiarImagen(imagen)">
+
     </div>
 
     <div id="descripcion">
@@ -37,7 +38,7 @@
 
             <button class="agregarCompra"  @click="agregar">comprar</button>
 
-        <h4>Listado</h4>
+        <h4>carrito</h4>
 
         <ul v-for="item in carro" :key="id">
             <li>{{item.ramAmount}} & {{item.price}}</li>
