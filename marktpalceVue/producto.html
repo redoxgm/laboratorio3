@@ -27,19 +27,33 @@
         <h2>Características</h2>
         <h3>Tipo computadora:</h3>
         <ul>
-            <li v-for="(notebook ,indice) in notebooksTypes" :key="notebook.id"  @mouseover= "PrecioSeleccionado(indice)" > {{ram(indice)}}</li> 
+            <li v-for="(notebook ,indice) in notebooksTypes" :key="notebook.id"  @click= "PrecioSeleccionado(indice)" > {{ram(indice)}}</li> 
            
         </ul>
         <h3>Precio producto seleccionado</h3>
 
-        <p>Precio Unitario: {{mostrarPrecioSeleccionado}} </p>
-      
+            <p >Precio Unitario: {{  mostrarPrecioeleccionado}} </p>
 
-        <button class="agregarCompra" @click="agregar">Comprar</button>
-        <p>carrito: {{carro}}</p>
+
+            <button class="agregarCompra"  @click="agregar">comprar</button>
+
+        <h4>Listado</h4>
+
+        <ul v-for="item in carro" :key="id">
+            <li>{{item.ramAmount}} & {{item.price}}</li>
+        </ul>
+
+        <p>Total: {{ sumaPreciosSeleccionados}}</p>
+
+        
+       
+
+       
+        
+       
     </div>
 
-    
+    .
     <div id="comentarios">
         <h2>Comentarios</h2>
         <div id="listado-comentarios">
