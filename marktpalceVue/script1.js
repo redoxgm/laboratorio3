@@ -7,7 +7,7 @@ const app = Vue.createApp({
             listaNotebookSeleccionada:[],
             precio:0,
             
-            imagenesNotebook:[
+           c:[
                 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6RwLPY5R9R3uKnz0Nmy5tFf17DM61WKXhlBjCbfWMl6osiVzl-LIOy3WHltd66j9WXNU&usqp=CAU',
                 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJQSNOWkS20mQugebEQa-b0ZTfN-oWKro9cR2gZ72zkpFeewAqy7kGEXsYcQqKy9u6Olw&usqp=CAU',
                 "https://ar-media.hptiendaenlinea.com/catalog/product/8/V/8VW01LA-1_T1615590539.png"
